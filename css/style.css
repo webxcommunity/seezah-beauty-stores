@@ -54,8 +54,223 @@ nav ul li a:hover {
     color: var(--gold);
 }
 
+/* Drop down menus */
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--burgundy);
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+nav ul li .dropdown li a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, var(--gold), var(--burgundy));
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.products {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 30px;
+   padding: 40px;
+}
+
+.product-details {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s linear;
+}
+
+.product-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 13px;
+}
+
+.product-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--burgundy);
+}
+
+.product-info .stock-status {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.product-info select,
+.product-info input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
 
+.product-info button {
+    background-color: var(--burgundy);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-info button:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+footer {
+    background-color: var(--burgundy);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: var(--burgundy);
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color:#f9f9f9;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--burgundy);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li  {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul li .dropdown {
+        position: static;
+    }
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    hero h2 {
+        font-size: 2rem;
+    }
+
+    .products {
+        padding: 20px;
+        gap: 20px;
+    }
+}
 
 
 

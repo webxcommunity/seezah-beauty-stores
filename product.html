@@ -17,17 +17,35 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Seezah Beauty Stores</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+         <div class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="Seezah Beauty Store Logo" width="150">
+        </a>
+    </div>
+
+   
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="product.html">Products</a>
+                <ul class="dropdown">
+                    <li><a href="#">Abayas</a></li>
+                    <li><a href="#">Jalabs</a></li>
+                    <li><a href="#">Kimar</a></li>
+                    <li><a href="#">Kaftans</a></li>
+                </ul>
+            </li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     </header>
 
 
@@ -89,5 +107,8 @@
         <p>42, Bolorunduro Street, Off Agric Road, Egan Igando</p>
         <p>&copy; 2025 Seezah Beauty Store. All rights reserved.</p>
     </footer>
+
+
+ <script src="js/main.js"></script>
     </body>
     </html>
