@@ -25,7 +25,36 @@ header {
     justify-content:space-between;
     align-items: center;
     padding: 20px 40px;
+    background-color: var(--burgundy);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+header .logo img{
+max-width: 150px;
+height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--gold);
+}
+
+
 
 
 
