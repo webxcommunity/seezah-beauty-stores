@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seezah Beauty store | Modest Wears & Accessories</title>
-
-    <meta name="description" content="Seezah Beauty Store offers the best modest wears including Jalabs, Abayas, Kimars, Kaftans, Scarfs, Bralettes, Tops, and more. Shop online and be happy!">
-
-    <meta name="keywords" content="modest wears, abaya, jalab, kimar, kaftan, scarfs, bralettes, tops, Seezah Beauty Store, online shop, fashion Nigeria">
-
-    <link rel="icon" href="assests/images/favicon.ico" type="images/x-icon">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SeezahBeautyStore Deals with modest wears, scarfs, accessories, bralettes, tops and more. Shop now!">
+  <meta name="keywords" content="Abaya, Kimar, Kaftan, Scarfs, Modest Wears, Accessories, Bralettes, Tops">
+  <title>Seezah Beauty Store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <header>
-         <div class="logo">
+
+     <header>
+    <div class="logo">
         <a href="index.html">
             <img src="assets/images/logo.png" alt="Seezah Beauty Store Logo" width="150">
         </a>
@@ -46,69 +42,54 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    </header>
+</header>
+  
 
+  <main>
+    <h1>Our Products</h1>
+    <div class="products-container">
 
+      <!-- Product 1 -->
+      <div class="product" data-stock="100000000000000">
+        <img src="assets/images/product1.jpg" alt="Elegant Abaya">
+        <h3>Elegant Abaya</h3>
+        <p>₦<span class="product-price" data-base-price="17000">12,000</span></p>
 
-    <main>
-        <section class="product-details">
-<div class="product-image">
-    <img src="assests/images/product.jpd" alt="product Name">
-</div>
+        <label for="quantity1">Quantity:</label>
+        <input type="number" id="quantity1" value="1" min="1">
+        <button class="add-to-cart" 
+                data-name="Elegant Abaya" 
+                data-price="17000" 
+                data-image="assets/images/product1.jpg" 
+                data-quantity-id="quantity1">Add to Cart</button>
+                  <span class="stock-badge">Stock: 5</span>
+        <span class="stock-status">In Stock</span>
+      </div>
 
-<div class="product-info">
-    <h2>product name</h2>
-    <p class="price">₦5000</p>
-    <p class="stock-status">In stock</p>
+      <!-- Product 2 -->
+      <div class="product" data-stock="100000000000000">
+        <img src="assets/images/product2.jpg" alt="Stylish Kimar">
+        <h3>Stylish Kimar</h3>
+        <p>₦<span class="product-price" data-base-price="17000">17,000</span></p>
 
-    <label for="size"> Select size</label>
-    <select id="size">
-        <option value="s">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-    </select>
+        <label for="quantity2">Quantity:</label>
+        <input type="number" id="quantity2" value="1" min="1">
+        <button class="add-to-cart" 
+                data-name="Stylish Kimar" 
+                data-price="12000" 
+                data-image="assets/images/product2.jpg" 
+                data-quantity-id="quantity2">Add to Cart</button>
+        <span class="stock-status">In Stock</span>
+        <span class="stock-badge">Stock: 5</span>
+      </div>
 
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" min="1" max="20" value="1">
+    <a href="cart.html"><button class="cart-btn">Go to cart page to check</button></a> <br>
+      <!-- Add more products as needed -->
+      <button id="reset-stock-cart" class="reset-btn">Reset Stock & Cart</button>
 
-    <button>Add to cart </button>
-</div>
-        </section>
+    </div>
+  </main>
 
-
-        <section class="product-details">
-  <div class="product-image">
-    <img src="assets/images/product2.jpg" alt="Jalab 1">
-  </div>
-  <div class="product-info">
-    <h2>Jalab 1</h2>
-    <p class="price">₦7000</p>
-    <p class="stock-status">In Stock</p>
-    
-    <label for="size">Select Size:</label>
-    <select id="size2">
-      <option value="S">S</option>
-      <option value="M">M</option>
-      <option value="L">L</option>
-    </select>
-
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity2" min="1" max="3" value="1">
-
-    <button>Add to Cart</button>
-  </div>
-</section>
-    </main>
-
-
-
-
- <footer>
-        <p>42, Bolorunduro Street, Off Agric Road, Egan Igando</p>
-        <p>&copy; 2025 Seezah Beauty Store. All rights reserved.</p>
-    </footer>
-
-
- <script src="js/main.js"></script>
-    </body>
-    </html>
+  <script src="js/main.js"></script>
+</body>
+</html>

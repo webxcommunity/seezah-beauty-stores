@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const paymentForm = document.getElementById('checkout-form');
 

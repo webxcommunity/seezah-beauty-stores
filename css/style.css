@@ -187,6 +187,71 @@ nav ul li .dropdown li a:hover {
     color: var(--black);
 }
 
+.reset-btn {
+    background-color: #800020; /* burgundy */
+    color: gold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.reset-btn:hover {
+    opacity: 0.8;
+}
+
+.cart-btn {
+    background-color: #800020; /* burgundy */
+    color: gold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cart-btn:hover {
+    opacity: 0.8;
+}
+
+.product-btn {
+    background-color: #800020; /* burgundy */
+    color: gold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.product-btn:hover {
+    opacity: 0.8;
+}
+
+.checkout-btn {
+    background-color: #800020; /* burgundy */
+    color: gold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.checkout-btn:hover {
+    opacity: 0.8;
+}
+
+
+.stock-badge {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #000; /* Black or any brand color */
+}
+
+
 footer {
     background-color: var(--burgundy);
     color: #fff;
