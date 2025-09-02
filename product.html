@@ -8,11 +8,96 @@
   <title>Seezah Beauty Store</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/product.css">
   <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
 
-     <header>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SeezahBeautyStore Deals with modest wears, scarfs, accessories, bralettes, tops and more. Shop now!">
+  <meta name="keywords" content="Abaya, Kimar, Kaftan, Scarfs, Modest Wears, Accessories, Bralettes, Tops">
+  <title>Seezah Beauty Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<header class="navbar">
+   <div class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo.png" alt="Seezah Beauty Store Logo" width="150">
+        </a>
+    </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Nav Links -->
+  <nav class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="checkout.html">Checkout</a>
+  </nav>
+</header>
+
+
+  <!-- Admin Panel -->
+  <section id="admin-panel" style="display:none;">
+    <h2>Admin: Add New Product</h2>
+    <form id="add-product-form">
+      <label>Product Name:</label>
+      <input type="text" id="admin-name" required>
+
+      <label>Price (₦):</label>
+      <input type="number" id="admin-price" required>
+
+      <label>Stock:</label>
+      <input type="number" id="admin-stock" required>
+
+      <label>Image URL:</label>
+      <input type="text" id="admin-image" required>
+
+      <button type="submit">Add Product</button>
+    </form>
+  </section>
+
+  <main>
+    <h1>Our Products</h1>
+    <div class="products-container"></div>
+  </main>
+
+
+     <footer>
+        <p>42, Bolorunduro Street, Off Agric Road, Egan Igando</p>
+        <p>&copy; 2025 Seezah Beauty Store. All rights reserved.</p>
+    </footer>
+
+   <script>
+ const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  hamburger.classList.toggle("active");
+});
+  </script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+     <!-- <header>
     <div class="logo">
         <a href="index.html">
             <img src="assets/images/logo.png" alt="Seezah Beauty Store Logo" width="150">
@@ -49,7 +134,7 @@
     <h1>Our Products</h1>
     <div class="products-container">
 
-      <!-- Product 1 -->
+    
       <div class="product" data-stock="100000000000000">
         <img src="assets/images/product1.jpg" alt="Elegant Abaya">
         <h3>Elegant Abaya</h3>
@@ -66,7 +151,7 @@
         <span class="stock-status">In Stock</span>
       </div>
 
-      <!-- Product 2 -->
+     
       <div class="product" data-stock="100000000000000">
         <img src="assets/images/product2.jpg" alt="Stylish Kimar">
         <h3>Stylish Kimar</h3>
@@ -84,11 +169,11 @@
       </div>
 
     <a href="cart.html"><button class="cart-btn">Go to cart page to check</button></a> <br>
-      <!-- Add more products as needed -->
+      
       <button id="reset-stock-cart" class="reset-btn">Reset Stock & Cart</button>
 
     </div>
-  </main>
+  </main> -->
 
   <script src="js/main.js"></script>
 </body>

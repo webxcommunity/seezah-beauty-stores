@@ -8,55 +8,90 @@
     <meta name="keywords" content="modest wears, abaya, jalab, kimar, kaftan, scarfs, bralettes, tops, Seezah Beauty Store, online shop, fashion Nigeria">
     <link rel="icon" href="assests/images/favicon.ico" type="images/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-   <header>
+
+
+<!-- <header>
+  <nav class="navbar">
     <div class="logo">
         <a href="index.html">
             <img src="assets/images/logo.png" alt="Seezah Beauty Store Logo" width="150">
         </a>
     </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header> -->
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">MyShop</div>
+  
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  
+  <!-- Nav Links -->
+  <nav class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="checkout.html">Checkout</a>
+  </nav>
+</header>
+
+
+
+
+
+
 
    
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <a href="product.html">Products</a>
-                <ul class="dropdown">
-                    <li><a href="#">Abayas</a></li>
-                    <li><a href="#">Jalabs</a></li>
-                    <li><a href="#">Kimar</a></li>
-                    <li><a href="#">Kaftans</a></li>
-                </ul>
-            </li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
 
 <!-- Hero Section -->
 <section class="hero">
-    <img src="assets/images/hero-banner.jpg" alt="Modest Wears Collection" class="hero-banner">
+    <!-- <img src="assets/images/hero-banner.jpg" alt="Modest Wears Collection" class="hero-banner">  -->
     <div class="hero-content">
         <h2>Welcome to Seezah Beauty Store</h2>
         <p>Deals with modest wears, scarfs, accessories, bralettes, tops, and more. Shop with us and be happy!</p>
-        <a href="product.html"><button>Shop Now</button></a>
+        <a href="product.html"><button class="btn">Shop Now</button></a>
     </div>
 </section>
 
     <main>
-        <section class="Products" id="Products-container">
+        <!-- <section class="hero">
+  <div>
+    <h1>Welcome to MyShop</h1>
+    <p>Your one-stop shop for amazing products</p>
+    <button>Shop Now</button>
+  </div>
+</section> -->
 
-        </section>
+<section class="features">
+  <div class="feature-card">
+    <h3>Fast Delivery</h3>
+    <p>We deliver your orders quickly and safely to your doorstep.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Premium Quality</h3>
+    <p>All our products are carefully selected for top quality.</p>
+  </div>
+  <div class="feature-card">
+    <h3>Secure Payment</h3>
+    <p>Enjoy peace of mind with our secure payment system.</p>
+  </div>
+</section>
+
     </main>
 
      <footer>
@@ -66,7 +101,21 @@
 
 
 
-    <script src="js/main.js"></script>
+  <script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+});
+
+
+
+  </script>
+
+
 
 </body>
 </html>
