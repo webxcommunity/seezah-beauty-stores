@@ -11,28 +11,25 @@
   <script src="https://js.paystack.co/v1/inline.js"></script>
 </head>
 <body>
-  <header class="navbar">
-   <div class="logo">
+ <header class="navbar">
+  <div class="logo">
         <a href="index.html">
             <img src="assets/images/logo.png" alt="Seezah Beauty Store Logo" width="150">
         </a>
     </div>
-
+  
   <!-- Hamburger Icon -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  
   <!-- Nav Links -->
   <nav class="nav-links" id="nav-links">
     <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
+    <a href="product.html">Products</a>
     <a href="cart.html">Cart</a>
     <a href="checkout.html">Checkout</a>
   </nav>
 </header>
+
 
 
 
@@ -52,185 +49,17 @@
         <p>&copy; 2025 Seezah Beauty Store. All rights reserved.</p>
     </footer>
 
-   <script>
- const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+ <script>
+ document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-  hamburger.classList.toggle("active");
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 });
-  </script>
+</script>
 
   <script src="js/checkout.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Checkout page for Seezah Beauty Store">
-  <title>Checkout - Seezah Beauty Store</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="icon" href="assets/images/favicon.ico">
-  <script src="https://js.paystack.co/v1/inline.js"></script>
-</head>
-<body>
- <header>
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="Seezah Beauty Store Logo" width="150">
-        </a>
-    </div>
-
-   
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <a href="product.html">Products</a>
-                <ul class="dropdown">
-                    <li><a href="#">Abayas</a></li>
-                    <li><a href="#">Jalabs</a></li>
-                    <li><a href="#">Kimar</a></li>
-                    <li><a href="#">Kaftans</a></li>
-                </ul>
-            </li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-  <main>
-    <h1>Checkout</h1>
-    <form id="checkout-form">
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" required>
-
-      <label for="phone">Phone:</label>
-      <input type="text" id="phone" required>
-
-      <input type="hidden" id="amount" name="amount">
-
-      <button type="submit">Pay Now</button>
-    </form>
-  </main>
-
-  <script src="js/main.js"></script>
-  <script src="js/paystack.js"></script>
-</body>
-</html> -->
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Seezah Beauty Store | Checkout</title>
-
-    <meta name="description" content="Secure checkout page for Seezah Beauty Store. Enter your details and complete your purchase.">
-
-    <meta name="keywords" content="Seezah Beauty Store, checkout, payment, modest wears, abaya, jalab, kimar, kaftan, tops, bralettes, fashion Nigeria">
-    <meta name="author" content="Seezah Beauty Store">
-
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-    <header>
-         <div class="logo">
-        <a href="index.html">
-            <img src="assets/images/logo.png" alt="Seezah Beauty Store Logo" width="150">
-        </a>
-    </div>
-
-   
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <a href="product.html">Products</a>
-                <ul class="dropdown">
-                    <li><a href="#">Abayas</a></li>
-                    <li><a href="#">Jalabs</a></li>
-                    <li><a href="#">Kimar</a></li>
-                    <li><a href="#">Kaftans</a></li>
-                </ul>
-            </li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    </header>
-
-    
-<main>
-    <section class="checkout">
-<form id="checkout-form">
-    <label for="fullname">Full Name:</label>
-    <input type="text" id="fullname" name="fullname" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="phone" required>
-
-    <label for="address">Shipping Address:</label>
-    <textarea name="address" id="address"></textarea>
-
-    <label for="amount">Amount (₦)</label>
-<input type="number" id="amount" value="17000" required>
-
-
-
-    <button type="submit">Pay Now</button>
-</form>
-    </section>
-</main>
-    
-
- <footer>
-        <p>42, Bolorunduro Street, Off Agric Road, Egan Igando</p>
-        <p>&copy; 2025 Seezah Beauty Store. All rights reserved.</p>
-    </footer>
-
-
-<script src="js/main.js"></script>
-<script src="https://js.paystack.co/v1/inline.js"></script>
-<script src="js/paystack.js"></script>
-
-    </body>
-    </html> -->
